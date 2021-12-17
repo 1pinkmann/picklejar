@@ -1,0 +1,42 @@
+/*-------- Fonts --------*/
+/*-------- Basic --------*/
+* {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+}
