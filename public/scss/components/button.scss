@@ -1,0 +1,23 @@
+/*-------- Button --------*/
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 50px;
+        color: #000000;
+    }
+}
+
+.button {
+    
+    &--angle {
+        width: 455px;
+    }
+}

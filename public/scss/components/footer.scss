@@ -1,0 +1,66 @@
+/*-------- Footer --------*/
+
+.footer {
+
+    &__top {
+        background-image: url(../images/footer/bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__top-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        height: 919px;
+        padding-bottom: 40px;
+    }
+
+    &__text {
+        font-family: $font-fs-rd-o;
+        font-size: 86px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__button {
+        margin-left: auto;
+    }
+
+    &__bottom {
+        background-image: linear-gradient(to right, #f05a2a 0%, #f05a2a 3.8727100000000005%, #f59120 49.5779%, #f9ae42 100%);
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 170px;
+    }
+
+    &__logo {
+        width: 359px;
+    }
+
+    &__logo-icon {
+        width: 100%;
+        color: #000000;
+        transition: color 0.3s ease-out;
+    }
+
+    &__logo:hover &__logo-icon {    
+        color: #ffffff;
+    }
+
+    &__link {
+        font-size: 20px;
+        color: #000000;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}

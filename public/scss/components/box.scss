@@ -1,0 +1,100 @@
+/*-------- Box --------*/
+
+.box {
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        margin-top: -230px;
+    }
+
+    &__item {
+        width: calc(33% - 30px);
+    }
+
+    &__item-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__item-image-wrapper:before {
+        content: '';
+        display: block;
+        padding-top: 75%;
+    }
+
+    &__item-image {
+        position: absolute;
+    }
+
+    &__item-text {
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    &__item-title {
+        font-family: $font-fs-o;
+        font-size: 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 65px;
+
+        background-image: url(../images/box/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title {
+        font-family: $font-fs-o;
+        font-size: 52px;
+        color: #f79520;
+    }
+
+    &__image {
+        width: 44%;
+        margin-bottom: -151px;
+
+        z-index: 2;
+        position: relative;
+    }
+
+    &__column {
+        width: 56%;
+        padding-right: 136px;
+    }
+
+    &__list {
+        margin-top: 40px;
+    }
+
+    &__list-item {
+        padding-left: 45px;
+
+        font-size: 40px;
+        color: #ffffff;
+
+        position: relative;
+    }
+
+    &__list-item:before {
+        content: url(../svg/check.svg);
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: -9px;
+    }
+
+    &__list-item:not(:first-child) {
+        margin-top: 40px;
+    }
+}

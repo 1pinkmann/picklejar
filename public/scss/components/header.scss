@@ -1,0 +1,38 @@
+/*-------- Header --------*/
+
+.header {
+    background: radial-gradient(circle, rgba(233,43,57,1) 0%, rgba(162,1,16,1) 100%);
+    box-shadow: 0 0 17px 13px rgba(0, 0, 0, 0.4);
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 170px;
+    }
+
+    &__logo {
+        width: 359px;
+    }
+
+    &__logo-icon {
+        width: 100%;
+        color: #ffffff;
+        transition: color 0.3s ease-out;
+    }
+
+    &__logo:hover &__logo-icon {
+        color: #afafaf;
+    }
+
+    &__link {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}

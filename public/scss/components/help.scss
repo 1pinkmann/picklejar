@@ -1,0 +1,53 @@
+/*-------- Help --------*/
+
+.help {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+
+    &__column {
+        width: calc(50% - 266px);
+        text-align: center;
+    }
+
+    &__image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__image-wrapper:before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    &__image {
+        position: absolute;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 20px;
+        height: 101px;
+        margin-top: 40px;
+
+        font-family: $font-fs-rd;
+        font-size: 50px;
+        color: #ffffff;
+
+        background-color: #000000;
+        border-radius: 30px;
+    }
+
+    &__text {
+        margin-top: 45px;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+}
