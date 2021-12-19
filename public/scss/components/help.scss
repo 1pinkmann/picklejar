@@ -45,6 +45,15 @@
 
         background-color: #000000;
         border-radius: 30px;
+        border: 2px solid transparent;
+
+        transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+    }
+
+    &__link:hover {
+        background-color: transparent;
+        color: #000000;
+        border-color: #000000;
     }
 
     &__text {
@@ -120,6 +129,10 @@
         &__text {
             font-size: 20px;
             margin-top: 10px;
+        }
+
+        &__link {
+            border-radius: 15px;
         }
     }
 }

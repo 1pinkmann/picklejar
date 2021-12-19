@@ -289,6 +289,10 @@ input[type=number] {
 .button__text {
   font-size: 50px;
   color: #000000;
+  transition: fill 0.2s ease-out;
+}
+.button:hover .button__text {
+  fill: #ffffff;
 }
 
 .button--angle {
@@ -1226,6 +1230,13 @@ input[type=number] {
   color: #ffffff;
   background-color: #000000;
   border-radius: 30px;
+  border: 2px solid transparent;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+.help__link:hover {
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
 }
 .help__text {
   margin-top: 45px;
@@ -1280,6 +1291,9 @@ input[type=number] {
   .help__text {
     font-size: 20px;
     margin-top: 10px;
+  }
+  .help__link {
+    border-radius: 15px;
   }
 }
 @media (max-width: 619px) {
