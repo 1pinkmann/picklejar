@@ -3,6 +3,7 @@
 }
 
 body {
+    min-width: 320px;
     font-family: $font-r;
     font-size: 14px;
     color: #000000;
@@ -53,4 +54,11 @@ input[type="number"] {
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+}
+
+@media (max-width: 479px) {
+
+    .container {
+        padding: 0 12px;
+    }
 }
